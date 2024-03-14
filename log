@@ -57,3 +57,24 @@ exercises.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 f1160f0
+Thu 14 Mar 2024 08:38:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:37:1: error: expected identifier or ‘(’ before ‘for’
+   37 | for (int i = 0 ; i < (size / 2) ; i++)
+      | ^~~
+exercises.c:37:20: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   37 | for (int i = 0 ; i < (size / 2) ; i++)
+      |                    ^
+exercises.c:37:36: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   37 | for (int i = 0 ; i < (size / 2) ; i++)
+      |                                    ^~
+exercises.c:44:1: error: expected identifier or ‘(’ before ‘return’
+   44 | return 0;
+      | ^~~~~~
+exercises.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
+   45 | }
+      | ^
+Compilation failed
+a48da13
