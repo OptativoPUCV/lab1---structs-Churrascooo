@@ -586,3 +586,14 @@ exercises.c:57:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 756fe3d
+Thu 14 Mar 2024 08:53:12 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:71:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   71 |   return contador;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d2d2732
