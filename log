@@ -250,3 +250,21 @@ exercises.c:58:8: error: unused variable ‘evenArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 5abf8de
+Thu 14 Mar 2024 08:47:37 PM UTC: 
+ exercises.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:37:1: error: expected identifier or ‘(’ before ‘for’
+   37 | for (i = 0 ; i < size/2 ; i++)
+      | ^~~
+exercises.c:37:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   37 | for (i = 0 ; i < size/2 ; i++)
+      |                ^
+exercises.c:37:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   37 | for (i = 0 ; i < size/2 ; i++)
+      |                            ^~
+exercises.c:46:1: error: expected identifier or ‘(’ before ‘}’ token
+   46 | }
+      | ^
+Compilation failed
+24e67bc
