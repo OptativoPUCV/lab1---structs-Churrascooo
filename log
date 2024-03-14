@@ -224,3 +224,29 @@ exercises.c:58:8: error: unused variable ‘evenArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 c46775e
+Thu 14 Mar 2024 08:46:23 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c:37:1: error: expected identifier or ‘(’ before ‘for’
+   37 | for (i = 0 ; i < size/2 ; i++)
+      | ^~~
+exercises.c:37:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   37 | for (i = 0 ; i < size/2 ; i++)
+      |                ^
+exercises.c:37:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   37 | for (i = 0 ; i < size/2 ; i++)
+      |                            ^~
+exercises.c:46:1: error: expected identifier or ‘(’ before ‘}’ token
+   46 | }
+      | ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:60:7: error: unused variable ‘contador’ [-Werror=unused-variable]
+   60 |   int contador = 0;
+      |       ^~~~~~~~
+exercises.c:58:8: error: unused variable ‘evenArr’ [-Werror=unused-variable]
+   58 |   int *evenArr = (int *)malloc(size * sizeof(int));
+      |        ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5abf8de
