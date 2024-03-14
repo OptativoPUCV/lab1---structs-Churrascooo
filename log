@@ -36,3 +36,24 @@ Thu 14 Mar 2024 08:35:05 PM UTC:
  tests:  0|6
 total_score: 10/70
 056efd1
+Thu 14 Mar 2024 08:37:16 PM UTC: 
+ exercises.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:1:
+exercises.c:37:1: error: expected identifier or ‘(’ before ‘for’
+   37 | for (int i = 0; i < size / 2; i++)
+      | ^~~
+exercises.c:37:19: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+   37 | for (int i = 0; i < size / 2; i++)
+      |                   ^
+exercises.c:37:32: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   37 | for (int i = 0; i < size / 2; i++)
+      |                                ^~
+exercises.c:44:1: error: expected identifier or ‘(’ before ‘return’
+   44 | return 0;
+      | ^~~~~~
+exercises.c:45:1: error: expected identifier or ‘(’ before ‘}’ token
+   45 | }
+      | ^
+Compilation failed
+f1160f0
