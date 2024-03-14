@@ -52,6 +52,7 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize)
+/*
 { 
   /*
   int *evenArr = (int *)malloc(size * sizeof(int));
@@ -69,9 +70,9 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
   
   
   return contador; 
-  */
+  
 }
-
+*/
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
 Descripción: Escribe una función que tome dos arreglos
