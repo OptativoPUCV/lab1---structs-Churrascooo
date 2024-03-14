@@ -611,3 +611,20 @@ exercises.c:57:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 85b65d0
+Thu 14 Mar 2024 08:53:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:71:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   71 |   return *contador;
+      |          ^~~~~~~~~
+exercises.c:57:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
+   57 |   int *newArr = malloc(sizeof(int) * size);
+      |        ^~~~~~
+exercises.c:73:1: error: control reaches end of non-void function [-Werror=return-type]
+   73 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9ca6dcd
