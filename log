@@ -639,3 +639,9 @@ exercises.c:57:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0a367d6
+Thu 14 Mar 2024 08:54:20 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|5
+total_score: 20/70
+5473a46
