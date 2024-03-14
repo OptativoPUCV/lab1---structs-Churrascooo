@@ -291,3 +291,26 @@ exercises.c:72:10: error: returning ‘int’ from a function with return type �
 cc1: all warnings being treated as errors
 Compilation failed
 3ffee91
+Thu 14 Mar 2024 08:48:43 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:38:1: error: expected identifier or ‘(’ before ‘for’
+   38 | for (i = 0 ; i > size/2 ; i++)
+      | ^~~
+exercises.c:38:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘>’ token
+   38 | for (i = 0 ; i > size/2 ; i++)
+      |                ^
+exercises.c:38:28: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘++’ token
+   38 | for (i = 0 ; i > size/2 ; i++)
+      |                            ^~
+exercises.c:46:1: error: expected identifier or ‘(’ before ‘}’ token
+   46 | }
+      | ^
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:72:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   72 |   return contador;
+      |          ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1281eb0
