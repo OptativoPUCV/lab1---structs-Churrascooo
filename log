@@ -572,3 +572,17 @@ Thu 14 Mar 2024 08:52:18 PM UTC:
  tests:  0|5
 total_score: 20/70
 6da1eae
+Thu 14 Mar 2024 08:52:58 PM UTC: 
+ exercises.c | 5 +----
+ 1 file changed, 1 insertion(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:71:10: error: returning ‘int’ from a function with return type ‘int *’ makes pointer from integer without a cast [-Werror=int-conversion]
+   71 |   return contador;
+      |          ^~~~~~~~
+exercises.c:57:8: error: unused variable ‘newArr’ [-Werror=unused-variable]
+   57 |   int *newArr = malloc(sizeof(int) * size);
+      |        ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+756fe3d
