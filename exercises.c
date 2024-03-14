@@ -34,14 +34,14 @@ void reverseArray(int arr[], int size) {}
 
 int temp;
 int i;
-for (i = 0 ; i < size/2 ; i++)
-  {
-    temp = arr[i];
-    arr[i] = arr[size - i - 1];
-    arr[size - i - 1] = temp;
 
-    
-  }
+for (i = 0 ; i < size/2 ; i++)
+{
+  temp = arr[i];
+  arr[i] = arr[size - i - 1];
+  arr[size - i - 1] = temp;
+
+}
     
 }
 
@@ -69,7 +69,7 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
     }
   
   
-  return NULL; 
+  return contador; 
 }
 
 /*
