@@ -162,20 +162,15 @@ typedef struct {
   Autor autor;
   int anioPublicacion;
 } Libro;
-
-strcpy(libro->titulo, titulo);
-strcpy(libro->autor.nombre, nombreAutor);
-libro->autor.anioNacimiento = anioNacimiento;
-libro->anioPublicacion = anioPublicacion;
-return;
-
-
-
   
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
                       int anioNacimiento, int anioPublicacion)
 {
-  
+  strcpy(libro->titulo, titulo);
+  strcpy(libro->autor.nombre, nombreAutor);
+  libro->autor.anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
+  return;
 }
 
 /*
@@ -195,4 +190,11 @@ typedef struct nodo {
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
 
-Nodo *crearListaEnlazada(int arr[], int size) { return NULL; }
+Nodo *crearListaEnlazada(int arr[], int size)
+{
+  
+
+
+  
+  return NULL;
+}
