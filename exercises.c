@@ -164,7 +164,7 @@ typedef struct {
 } Libro;
 
 strcpy(libro->titulo, titulo);
-  strcpy(libro->autor.nombre, autorNombre);
+  strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = AnioNacimiento;
   libro->anioPublicacion = anioPublicacion;
   return;
