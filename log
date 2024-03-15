@@ -808,3 +808,23 @@ Thu 14 Mar 2024 11:36:56 PM UTC:
  tests:  0|2
 total_score: 50/70
 ec03fa6
+Fri 15 Mar 2024 12:05:23 AM UTC: 
+ exercises.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:1:
+exercises.c:166:13: error: expected ‘)’ before ‘->’ token
+  166 | strcpy(libro->titulo, titulo);
+      |             ^~
+      |             )
+exercises.c:167:15: error: expected ‘)’ before ‘->’ token
+  167 |   strcpy(libro->autor.nombre, autorNombre);
+      |               ^~
+      |               )
+exercises.c:168:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  168 |   libro->autor.anioNacimiento = autorAnioNacimiento;
+      |        ^~
+exercises.c:170:3: error: expected identifier or ‘(’ before ‘return’
+  170 |   return;
+      |   ^~~~~~
+Compilation failed
+c80de0e
