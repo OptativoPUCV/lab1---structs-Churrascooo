@@ -972,3 +972,37 @@ Fri 15 Mar 2024 12:26:08 AM UTC:
  tests:  0|1
 total_score: 60/70
 b3b0950
+Fri 15 Mar 2024 11:57:13 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:3: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  195 |   nodo *arr = (nodo *) mallloc(sizeof(nodo));
+      |   ^~~~
+      |   struct 
+exercises.c:195:9: error: ‘arr’ redeclared as different kind of symbol
+  195 |   nodo *arr = (nodo *) mallloc(sizeof(nodo));
+      |         ^~~
+exercises.c:193:30: note: previous definition of ‘arr’ with type ‘int *’
+  193 | Nodo *crearListaEnlazada(int arr[], int size)
+      |                          ~~~~^~~~~
+exercises.c:195:16: error: ‘nodo’ undeclared (first use in this function)
+  195 |   nodo *arr = (nodo *) mallloc(sizeof(nodo));
+      |                ^~~~
+exercises.c:195:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:195:22: error: expected expression before ‘)’ token
+  195 |   nodo *arr = (nodo *) mallloc(sizeof(nodo));
+      |                      ^
+exercises.c:196:6: error: request for member ‘numero’ in something not a structure or union
+  196 |   arr->numero = arr[0];
+      |      ^~
+exercises.c:197:6: error: request for member ‘size’ in something not a structure or union
+  197 |   arr->size = size;
+      |      ^~
+exercises.c:199:10: error: returning ‘int *’ from a function with incompatible return type ‘Nodo *’ {aka ‘struct nodo *’} [-Werror=incompatible-pointer-types]
+  199 |   return arr;
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+0ccea91
