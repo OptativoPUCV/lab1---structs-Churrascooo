@@ -920,3 +920,26 @@ exercises.c:170:1: error: expected identifier or ‘(’ before ‘return’
       | ^~~~~~
 Compilation failed
 b6e80ff
+Fri 15 Mar 2024 12:21:09 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:166:13: error: expected ‘)’ before ‘->’ token
+  166 | strcpy(libro->titulo, titulo);
+      |             ^~
+      |             )
+exercises.c:167:13: error: expected ‘)’ before ‘->’ token
+  167 | strcpy(libro->autor.nombre = nombreAutor);
+      |             ^~
+      |             )
+exercises.c:168:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  168 | libro->autor.anioNacimiento = anioNacimiento;
+      |      ^~
+exercises.c:169:6: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+  169 | libro->anioPublicacion = anioPublicacion;
+      |      ^~
+exercises.c:170:1: error: expected identifier or ‘(’ before ‘return’
+  170 | return;
+      | ^~~~~~
+Compilation failed
+f7a1775
