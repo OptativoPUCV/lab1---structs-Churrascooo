@@ -211,5 +211,5 @@ Nodo *crearListaEnlazada(int arr[], int size)
       actual = nuevoNodo;
     }
   }
-  return NULL;
+  return nuevoNodo;
 }
