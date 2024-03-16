@@ -1129,3 +1129,14 @@ Sat 16 Mar 2024 12:11:28 AM UTC:
  tests:  0|1
 total_score: 60/70
 e582c8e
+Sat 16 Mar 2024 12:15:08 AM UTC: 
+ exercises.c | 21 +++++++++++----------
+ 1 file changed, 11 insertions(+), 10 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:214:1: error: control reaches end of non-void function [-Werror=return-type]
+  214 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+cf56173
