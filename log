@@ -1074,3 +1074,14 @@ exercises.c:209:12: note: each undeclared identifier is reported only once for e
 cc1: all warnings being treated as errors
 Compilation failed
 e65150f
+Sat 16 Mar 2024 12:05:31 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:203:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  203 |     if (head = NULL) head = temp;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9db892b
