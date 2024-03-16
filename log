@@ -1045,3 +1045,17 @@ exercises.c:195:9: error: unused variable ‘head’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 6d1a593
+Sat 16 Mar 2024 12:03:18 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:23: error: unused variable ‘actual’ [-Werror=unused-variable]
+  195 |   Nodo *head = NULL, *actual = NULL, *temp;
+      |                       ^~~~~~
+exercises.c:195:9: error: unused variable ‘head’ [-Werror=unused-variable]
+  195 |   Nodo *head = NULL, *actual = NULL, *temp;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d0be7b6
