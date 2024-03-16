@@ -1059,3 +1059,18 @@ exercises.c:195:9: error: unused variable ‘head’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d0be7b6
+Sat 16 Mar 2024 12:05:23 AM UTC: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:203:9: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  203 |     if (head = NULL) head = temp;
+      |         ^~~~
+exercises.c:209:12: error: ‘cabeza’ undeclared (first use in this function)
+  209 |     return cabeza;
+      |            ^~~~~~
+exercises.c:209:12: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+e65150f
