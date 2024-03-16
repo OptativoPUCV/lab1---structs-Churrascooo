@@ -1006,3 +1006,42 @@ exercises.c:199:10: error: returning ‘int *’ from a function with incompatib
 cc1: all warnings being treated as errors
 Compilation failed
 0ccea91
+Sat 16 Mar 2024 12:02:41 AM UTC: 
+ exercises.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:195:3: error: unknown type name ‘nodo’; use ‘struct’ keyword to refer to the type
+  195 |   nodo *head = NULL, *actual = NULL, *temp
+      |   ^~~~
+      |   struct 
+exercises.c:197:3: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘for’
+  197 |   for (int i = 0 ; i < size ; i++)
+      |   ^~~
+exercises.c:197:20: error: ‘i’ undeclared (first use in this function)
+  197 |   for (int i = 0 ; i < size ; i++)
+      |                    ^
+exercises.c:197:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:197:34: error: expected ‘;’ before ‘)’ token
+  197 |   for (int i = 0 ; i < size ; i++)
+      |                                  ^
+      |                                  ;
+exercises.c:197:34: error: expected statement before ‘)’ token
+exercises.c:199:5: error: ‘temp’ undeclared (first use in this function)
+  199 |     temp = (nodo *)malloc(sizeof(nodo));
+      |     ^~~~
+exercises.c:199:13: error: ‘nodo’ undeclared (first use in this function)
+  199 |     temp = (nodo *)malloc(sizeof(nodo));
+      |             ^~~~
+exercises.c:199:19: error: expected expression before ‘)’ token
+  199 |     temp = (nodo *)malloc(sizeof(nodo));
+      |                   ^
+exercises.c:195:23: error: unused variable ‘actual’ [-Werror=unused-variable]
+  195 |   nodo *head = NULL, *actual = NULL, *temp
+      |                       ^~~~~~
+exercises.c:195:9: error: unused variable ‘head’ [-Werror=unused-variable]
+  195 |   nodo *head = NULL, *actual = NULL, *temp
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6d1a593
