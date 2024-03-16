@@ -1108,3 +1108,18 @@ Sat 16 Mar 2024 12:07:16 AM UTC:
  tests:  0|1
 total_score: 60/70
 649ea33
+Sat 16 Mar 2024 12:11:22 AM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:174:1: error: expected expression before ‘}’ token
+  174 | }
+      | ^
+exercises.c:174:1: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+exercises.c:166:6: note: declared here
+  166 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |      ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9ac4f96

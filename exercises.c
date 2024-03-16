@@ -170,7 +170,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strcpy(libro->autor.nombre, nombreAutor);
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
-  return;
+  return
 }
 
 /*
@@ -185,7 +185,8 @@ Recuerda reservar memoria dinámica para cada nodo usando malloc.
 Puedes guiarte con lo que vimos en las clases (diapos).
   */
 
-typedef struct nodo {
+typedef struct nodo
+{
   int numero;
   struct nodo *siguiente; // puntero al siguiente nodo
 } Nodo;
